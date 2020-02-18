@@ -1,29 +1,42 @@
 window.onload = () => {
     
-    let tiles = ["blank", "mine"];
-    console.log(tiles)
-    const numButton = 16;
-    const mineCount = 4;
+    // let tiles = ["empty", "mine"];
+    // let randomMine = "X";
+    let mines = []
+    
+    // const $allButtons = document.querySelectorAll('.grid');
+    // const $mineCount = 4;
+   
 
-    let grid( numButton, mineCount) {
-        
-        for (i = 0; i < 16; i++) {
-        let across = Math.round(Math.random() * (this.grid.length -1));
-        let down = Math.round(Math.random() * (this.grid[0].length -1));
+    // let grid(allButton, mineCount) {
+
+    const createRandomMine = () => {
+        const randomMine = Math.floor(Math.random()*16);
+        // if randomMine is already in mines , return createRandomMine()
+        // if(randomMine.includes(mines));
+        // return createRandomMine;
+        console.log(mines)
+        $('.grid').eq(randomMine).text("X");
+        console.log(randomMine)
+        mines.push(randomMine)
+        console.log(mines)
     }
+
+    for (let i = 0; i < 4; i++) {
+        createRandomMine();
     }
+
 
 };
 
 
-// Random mines placed in grid x 4 - function - PUSH
+
+
+// Random mines placed in grid x 4 - function
 
 // Randomly generate either blank or mine and place in grid
 
-// Start with either buttons as mines or blank
-
 // Cells have two states - Open or Closed - Click to open
-
 
 // If mines clicked, reveal all mines
 
