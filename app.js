@@ -5,7 +5,7 @@ window.onload = () => {
     // const $bomb = document.querySelectorAll('#bomb');
     const bomb = `<i class="fas fa-bomb" id="bomb"></i>`;
 
-    for (let i = 0; i < 36; i++) {
+    for (let i = 0; i < 100; i++) {
 
         const $newButton = $('<button></button>');
             $('#container').append($newButton).html();
