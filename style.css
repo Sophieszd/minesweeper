@@ -1,15 +1,31 @@
 * {
-    background-color: royalblue;
+    background-color: black;
     text-align: center;
+}
+
+h1 {
+    color: red;
+    font-family: 'Krona One', sans-serif;
+}
+
+button {
+    color: red;
 }
 
 #container {
     display: grid;
     margin: auto;
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     
 }
 
+#bomb {
+    color: red;
+}
+
+/* .grid {
+    border: yellow;
+} */

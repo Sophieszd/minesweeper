@@ -2,21 +2,19 @@ window.onload = () => {
     
     let mines = []
     const $button = $('.grid');
-    // const $bomb = document.querySelectorAll('#bomb');
     const bomb = `<i class="fas fa-bomb" id="bomb"></i>`;
 
     for (let i = 0; i < 100; i++) {
 
-        const $newButton = $('<button></button>');
-            $('#container').append($newButton).html();
-            // $('.grid').append($newButton).html();
+        const $newButton = $('<button class="grid"></button>');
+            $('#container').append($newButton);
         
     }
     
     const createRandomMine = () => {
-        const randomMine = Math.floor(Math.random()*32);
+        const randomMine = Math.floor(Math.random()*100);
     
-        if(mines.indexOf(randomMine) !== -1){
+        if(mines.indexOf(randomMine) !== -1) {
             return createRandomMine();
         }
         
@@ -25,16 +23,17 @@ window.onload = () => {
         console.log(mines);
     }
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 10; i++) {
         createRandomMine();
     }
 
-    
-
     $button.one('click', event => {
-        if(mines.hasClass("bomb")) {
-            $('.grid').html("bomb");
-
+        if(randomMine.hasClass("bomb")) {
+            // $('.grid').html("bomb");
+            // $('.grid').append($(event.target).html(bomb));
+            
+            $('.grid').$(event.target).html(bomb);
+            console.log()
         }
     
     })
