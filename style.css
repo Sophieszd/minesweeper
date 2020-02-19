@@ -31,6 +31,10 @@ button {
     width: 80px;
 }
 
+.clicked {
+    background-color: greenyellow;
+  }
+
 /* .grid {
     border: yellow;
 } */
