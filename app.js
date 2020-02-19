@@ -1,20 +1,16 @@
 window.onload = () => {
     
-    // let tiles = ["empty", "mine"];
-    // let randomMine = "X";
     let mines = []
+    let x = mines.length
+    let y = 0
     
-    // const $allButtons = document.querySelectorAll('.grid');
-    // const $mineCount = 4;
-   
-
-    // let grid(allButton, mineCount) {
-
     const createRandomMine = () => {
         const randomMine = Math.floor(Math.random()*16);
         // if randomMine is already in mines , return createRandomMine()
-        // if(randomMine.includes(mines));
-        // return createRandomMine;
+        if(mines.indexOf(randomMine) !== -1){
+            return createRandomMine();
+        }
+        
         console.log(mines)
         $('.grid').eq(randomMine).text("X");
         console.log(randomMine)
