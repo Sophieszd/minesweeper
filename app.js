@@ -1,4 +1,4 @@
-window.onload = () => {
+// window.onload = () => {
     
     let mines = []
     const $button = $('.grid');
@@ -27,19 +27,20 @@ window.onload = () => {
         createRandomMine();
     }
 
-    $button.one('click', event => {
-        if(randomMine.hasClass("bomb")) {
+    $('.grid').on('click', () => {
+        if(event.target.classList.contains("bomb")) {
             // $('.grid').html("bomb");
             // $('.grid').append($(event.target).html(bomb));
             
-            $('.grid').$(event.target).html(bomb);
-            console.log()
-        }
-    
+            // $('.grid').$(event.target).html(bomb);
+            // console.log("working?");
+            $('.bomb').html(bomb);
+        }   
+        // placebomb = event.target.classList;
     })
 
 
-};
+// };
 
 
 

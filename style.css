@@ -1,13 +1,13 @@
 * {
     background-color: black;
     text-align: center;
-}
-
-h1 {
     color: red;
     font-family: 'Krona One', sans-serif;
 }
 
+h1 {
+    margin-top: 30px;
+}
 button {
     color: red;
 }
@@ -24,6 +24,11 @@ button {
 
 #bomb {
     color: red;
+}
+
+#reset {
+    height: 40px;
+    width: 80px;
 }
 
 /* .grid {
