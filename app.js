@@ -1,26 +1,35 @@
 window.onload = () => {
     
     let mines = []
-    let x = mines.length
-    let y = 0
+    const $button = $('.grid');
+    // const $bomb = document.querySelectorAll('#bomb');
+    const bomb = `<i class="fas fa-bomb" id="bomb"></i>`;
     
     const createRandomMine = () => {
-        const randomMine = Math.floor(Math.random()*16);
-        // if randomMine is already in mines , return createRandomMine()
+        const randomMine = Math.floor(Math.random()*32);
+    
         if(mines.indexOf(randomMine) !== -1){
             return createRandomMine();
         }
         
-        console.log(mines)
-        $('.grid').eq(randomMine).text("X");
-        console.log(randomMine)
-        mines.push(randomMine)
-        console.log(mines)
+        $('.grid').eq(randomMine).addClass("bomb");
+        mines.push(randomMine);
+        console.log(mines);
     }
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 8; i++) {
         createRandomMine();
     }
+
+    
+
+    $button.one('click', event => {
+        if(randomMine.hasClass("bomb")) {
+            $('.grid').html("bomb");
+
+        }
+    
+    })
 
 
 };
@@ -28,9 +37,9 @@ window.onload = () => {
 
 
 
-// Random mines placed in grid x 4 - function
+// Random mines placed in grid x 8 - function
 
-// Randomly generate either blank or mine and place in grid
+ // if randomMine is already in mines , return createRandomMine()
 
 // Cells have two states - Open or Closed - Click to open
 

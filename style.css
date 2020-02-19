@@ -8,12 +8,14 @@
     margin: auto;
     height: 500px;
     width: 500px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "one two three four"
-    "five six seven eight"
-    "nine ten eleven twelve"
-    "thirteen fourteen fifteen sixteen";
+    "one two three four five six"
+    "seven eight nine ten eleven twelve"
+    "thirteen fourteen fifteen sixteen seventeen eighteen"
+    "nineteen twenty twentyone twentytwo twentythree twentyfour"
+    "twentyfive twentysix twentyseven twentyeight twentynine thirty"
+    "thirtyone thirtytwo thirtythree thirtyfour thirtyfive thirtysix"
 }
 
