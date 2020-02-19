@@ -32,19 +32,18 @@ window.onload = () => {
     //     $(index).addClass("clicked");
     //   })
 
+    //   $('.grid').on('click', () => {
+    //     console.log('hello');
+    //     $(index).addClass("clicked");
+    //   })
+
     $('.grid').on('click', () => {
         if(event.target.classList.contains("bomb")) {
             $('.bomb').html(bomb);
         }   
     })
 
-
 };
-
-
-
-
-
 
 
 // Random mines placed in grid x 8 - function
