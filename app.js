@@ -4,6 +4,14 @@ window.onload = () => {
     const $button = $('.grid');
     // const $bomb = document.querySelectorAll('#bomb');
     const bomb = `<i class="fas fa-bomb" id="bomb"></i>`;
+
+    for (let i = 0; i < 36; i++) {
+
+        const $newButton = $('<button></button>');
+            $('#container').append($newButton).html();
+            // $('.grid').append($newButton).html();
+        
+    }
     
     const createRandomMine = () => {
         const randomMine = Math.floor(Math.random()*32);
@@ -24,7 +32,7 @@ window.onload = () => {
     
 
     $button.one('click', event => {
-        if(randomMine.hasClass("bomb")) {
+        if(mines.hasClass("bomb")) {
             $('.grid').html("bomb");
 
         }
@@ -33,6 +41,9 @@ window.onload = () => {
 
 
 };
+
+
+
 
 
 
