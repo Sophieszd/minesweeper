@@ -37,12 +37,21 @@ window.onload = () => {
     //     $(index).addClass("clicked");
     //   })
 
+    // $grid.click(function(){
+    //     $(this).addClass('green');
+    // })
+
+
     $('.grid').on('click', () => {
+
+        $('.grid').addClass('green').index();
+
         if(event.target.classList.contains("bomb")) {
             $('.bomb').html(bomb);
         }   
     })
 
+   
 };
 
 
