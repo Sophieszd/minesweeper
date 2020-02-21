@@ -27,10 +27,11 @@ window.onload = () => {
         createRandomMine();
     }
     
-    $('.grid').on('click', () => {
+    $('.grid').one('click', () => {
 
         if(event.target.classList.contains("bomb")) {
             $('.bomb').html(bomb);
+            $('.grid').off('click');
         } else {
             clicked.push($(event.target).index());
             $(event.target).addClass('green');
