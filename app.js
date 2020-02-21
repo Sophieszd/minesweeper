@@ -1,7 +1,7 @@
 window.onload = () => {
     
     let mines = []
-    // const $button = $('.grid');
+    let clicked = []
     const bomb = `<i class="fas fa-bomb" id="bomb"></i>`;
 
     for (let i = 0; i < 100; i++) {
@@ -26,32 +26,17 @@ window.onload = () => {
     for (let i = 0; i < 10; i++) {
         createRandomMine();
     }
-
-    // $('.grid').on('click', () => {
-    //     console.log('hello');
-    //     $(index).addClass("clicked");
-    //   })
-
-    //   $('.grid').on('click', () => {
-    //     console.log('hello');
-    //     $(index).addClass("clicked");
-    //   })
-
-    // $grid.click(function(){
-    //     $(this).addClass('green');
-    // })
-
-
+    
     $('.grid').on('click', () => {
-
-        $('.grid').addClass('green').index();
 
         if(event.target.classList.contains("bomb")) {
             $('.bomb').html(bomb);
-        }   
+        } else {
+            clicked.push($(event.target).index());
+            $(event.target).addClass('green');
+            console.log(clicked);
+        }
     })
-
-   
 };
 
 
