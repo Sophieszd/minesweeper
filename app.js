@@ -38,6 +38,8 @@ window.onload = () => {
             console.log(clicked);
         }
     })
+
+    // $('grid').mousedown(placeFlag()) 
 };
 
 
