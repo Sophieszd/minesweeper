@@ -39,11 +39,12 @@ window.onload = () => {
         }
     })
 
-    // $('grid').mousedown('click', (event.which == 3)) => {
-    //     if() {
-    //     return $('.').html(flag);  
-    //     }
-    //     })
+    $('grid').mousedown('click', () => {
+       if (event.target.which == 3) {
+        $('.grid').html(flag); 
+       } 
+    })
+        
     // $('grid').mousedown(placeFlag()) {
     // event.which == 3
     // $('.grid').html(flag);
