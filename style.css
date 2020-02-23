@@ -1,7 +1,7 @@
 * {
-    background-color: black;
+    background-color: #332E3C;
     text-align: center;
-    color: red;
+    color:  #ECA400;
     font-family: 'Krona One', sans-serif;
 }
 #all {
@@ -57,10 +57,7 @@ button {
     width: 80px;
 }
 
-.clicked {
-    background-color: greenyellow;
-  }
-
 .green {
-    background-color: greenyellow;
+    background-color: #00EA5D;
+    
 }

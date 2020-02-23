@@ -3,12 +3,12 @@ window.onload = () => {
     let mines = []
     let clicked = []
     const bomb = `<i class="fas fa-bomb" id="bomb"></i>`;
+    const flag = `<i class="far fa-flag"></i>`;
 
     for (let i = 0; i < 100; i++) {
 
         const $newButton = $('<button class="grid"></button>');
             $('#container').append($newButton);
-        
     }
     
     const createRandomMine = () => {
@@ -39,7 +39,15 @@ window.onload = () => {
         }
     })
 
-    // $('grid').mousedown(placeFlag()) 
+    // $('grid').mousedown('click', (event.which == 3)) => {
+    //     if() {
+    //     return $('.').html(flag);  
+    //     }
+    //     })
+    // $('grid').mousedown(placeFlag()) {
+    // event.which == 3
+    // $('.grid').html(flag);
+    // }
 };
 
 
