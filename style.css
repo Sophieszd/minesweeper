@@ -55,9 +55,9 @@ button {
 #reset {
     height: 40px;
     width: 80px;
+    color: #ECA400;
 }
 
 .green {
-    /* background-color: #00EA5D; */
     background-color: #37D674;
 }
