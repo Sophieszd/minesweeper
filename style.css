@@ -1,5 +1,5 @@
 * {
-    background-color: #332E3C;
+    background-color: #0F1116;
     text-align: center;
     color:  #ECA400;
     font-family: 'Krona One', sans-serif;
@@ -58,6 +58,6 @@ button {
 }
 
 .green {
-    background-color: #00EA5D;
-    
+    /* background-color: #00EA5D; */
+    background-color: #37D674;
 }
