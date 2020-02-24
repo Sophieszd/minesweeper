@@ -39,7 +39,8 @@ window.onload = () => {
         }
     })
 
-    $('grid').mousedown('click', () => {
+    $('grid').on('contextmenu', () => {
+        // add prevent event default
        if (event.target.which == 3) {
         $('.grid').html(flag); 
        } 
