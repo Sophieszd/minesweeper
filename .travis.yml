@@ -1,0 +1,10 @@
+language: node_js
+# test: yarn run test
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github_token: 9c7f3b801a981c62e4eaa4bb95fbbeeffcd9b94b
+  on:
+    branch: master
