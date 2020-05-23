@@ -39,12 +39,15 @@ window.onload = () => {
         }
     })
 
-    $('grid').on('contextmenu', () => {
-        // add prevent event default
-       if (event.target.which == 3) {
-        $('.grid').html(flag); 
-       } 
-    })
+    var handleRightClick = function (id) {
+        $grid.html( FLAG )
+    }
+    // $('grid').on('contextmenu', () => {
+    //     // add prevent event default
+    //    if (event.target.which == 3) {
+    //     $('.grid').html(flag); 
+    //    } 
+    // })
         
     // $('grid').mousedown(placeFlag()) {
     // event.which == 3
